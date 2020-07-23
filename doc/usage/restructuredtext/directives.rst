@@ -656,6 +656,10 @@ __ http://pygments.org/docs/lexers
    string are included. The ``start-at`` and ``end-at`` options behave in a
    similar way, but the lines containing the matched string are included.
 
+   If ``start-after``/``start-at`` and ``end-before``/``end-at`` have same strings,
+   ``end-before``/``end-at`` will match with the second line that contains the
+   option string.
+
    With lines selected using ``start-after`` it is still possible to use
    ``lines``, the first allowed line having by convention the line number
    ``1``.
